@@ -23,8 +23,8 @@ public:
         for (int i = 0; i < s.size(); ++i) {
             m[s[i]] = counter.data() + i;
         }
+        operator++();
 
-//        operator++();
 //
 //        counter[2] = 3;
 //
@@ -56,7 +56,7 @@ public:
 
             set<int> check(counter.begin(), counter.end());
             if (check.size() == counter.size()) doNext = false;
-            doNext = false;
+//            doNext = false;
         }
     }
 
