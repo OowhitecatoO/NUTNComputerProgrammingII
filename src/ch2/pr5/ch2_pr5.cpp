@@ -85,11 +85,11 @@ public:
 
 int main() {
 
-    string target = "TOO + TOO + TOO = GOOD";
+    string target = "TOO + TOO + TOO + TOO = GOOD";
     cout << target << endl;
 
     for (PuzzleKey p = PuzzleKey(target); p.hasNext(); ++p) {
-        if (p["TOO"] + p["TOO"] + p["TOO"] == p["GOOD"])
+        if (p["TOO"] + p["TOO"] + p["TOO"] + p["TOO"] == p["GOOD"])
             p.printFormat(target);
     }
 
